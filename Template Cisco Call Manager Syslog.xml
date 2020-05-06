@@ -1,0 +1,1704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>3.2</version>
+    <date>2020-05-06T14:22:20Z</date>
+    <groups>
+        <group>
+            <name>Templates</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template Cisco Call Manager Syslog</template>
+            <name>Template Cisco Call Manager Syslog</name>
+            <description>Template para monitoramento de itens através de evento gerados por syslog para Call Manager.</description>
+            <groups>
+                <group>
+                    <name>Templates</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>Backup and Restore</name>
+                </application>
+                <application>
+                    <name>CDR</name>
+                </application>
+                <application>
+                    <name>Database</name>
+                </application>
+                <application>
+                    <name>SIP Trunk</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>Eventos CDR - Cluster {$CLUSTER1}</name>
+                    <type>7</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>log[/var/log/syslog-ng/{$CLUSTER1}.log,&quot;UC_CDRREP-3-CDR&quot;,,,,,]</key>
+                    <delay>30</delay>
+                    <history>7</history>
+                    <trends>0</trends>
+                    <status>0</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>CDR</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Eventos Disaster Recovery Framework - Cluster {$CLUSTER1}</name>
+                    <type>7</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>log[/var/log/syslog-ng/{$CLUSTER1}.log,%UC_DRF,,,,,]</key>
+                    <delay>30</delay>
+                    <history>7</history>
+                    <trends>0</trends>
+                    <status>1</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Backup and Restore</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Eventos Database - Cluster {$CLUSTER1}</name>
+                    <type>7</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>log[/var/log/syslog-ng/{$CLUSTER1}.log,,,,,,]</key>
+                    <delay>30</delay>
+                    <history>7</history>
+                    <trends>0</trends>
+                    <status>1</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Database</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Eventos SIP Trunk - Cluster {$CLUSTER1}</name>
+                    <type>7</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,]</key>
+                    <delay>30</delay>
+                    <history>7</history>
+                    <trends>0</trends>
+                    <status>1</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>SIP Trunk</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Eventos CDR - Cluster {$CLUSTER2}</name>
+                    <type>7</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>log[/var/log/syslog-ng/{$CLUSTER2}.log,&quot;UC_CDRREP-3-CDR&quot;,,,,,]</key>
+                    <delay>30</delay>
+                    <history>7</history>
+                    <trends>0</trends>
+                    <status>1</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>CDR</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Eventos Disaster Recovery Framework - Cluster {$CLUSTER2}</name>
+                    <type>7</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>log[/var/log/syslog-ng/{$CLUSTER2}.log,%UC_DRF,,,,,]</key>
+                    <delay>30</delay>
+                    <history>7</history>
+                    <trends>0</trends>
+                    <status>1</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Backup and Restore</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Eventos Database - Cluster {$CLUSTER2}</name>
+                    <type>7</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>log[/var/log/syslog-ng/{$CLUSTER2}.log,,,,,,]</key>
+                    <delay>30</delay>
+                    <history>7</history>
+                    <trends>0</trends>
+                    <status>1</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Database</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Eventos SIP Trunk - Cluster {$CLUSTER2}</name>
+                    <type>7</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,]</key>
+                    <delay>30</delay>
+                    <history>7</history>
+                    <trends>0</trends>
+                    <status>1</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>SIP Trunk</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+            </items>
+            <discovery_rules/>
+            <httptests/>
+            <macros>
+                <macro>
+                    <macro>{$CLUSTER1}</macro>
+                    <value>Cluster_Name_1</value>
+                </macro>
+                <macro>
+                    <macro>{$CLUSTER2}</macro>
+                    <value>Cluster_Name_2</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK101}</macro>
+                    <value>Sip_Trunk_Cluster1_01</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK102}</macro>
+                    <value>Sip_Trunk_Cluster1_02</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK103}</macro>
+                    <value>Sip_Trunk_Cluster1_03</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK104}</macro>
+                    <value>Sip_Trunk_Cluster1_04</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK105}</macro>
+                    <value>Sip_Trunk_Cluster1_05</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK106}</macro>
+                    <value>Sip_Trunk_Cluster1_06</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK107}</macro>
+                    <value>Sip_Trunk_Cluster1_07</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK108}</macro>
+                    <value>Sip_Trunk_Cluster1_08</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK109}</macro>
+                    <value>Sip_Trunk_Cluster1_09</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK110}</macro>
+                    <value>Sip_Trunk_Cluster1_10</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK111}</macro>
+                    <value>Sip_Trunk_Cluster1_11</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK112}</macro>
+                    <value>Sip_Trunk_Cluster1_12</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK113}</macro>
+                    <value>Sip_Trunk_Cluster1_13</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK114}</macro>
+                    <value>Sip_Trunk_Cluster1_14</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK115}</macro>
+                    <value>Sip_Trunk_Cluster1_15</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK116}</macro>
+                    <value>Sip_Trunk_Cluster1_16</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK117}</macro>
+                    <value>Sip_Trunk_Cluster1_17</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK118}</macro>
+                    <value>Sip_Trunk_Cluster1_18</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK119}</macro>
+                    <value>Sip_Trunk_Cluster1_19</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK120}</macro>
+                    <value>Sip_Trunk_Cluster1_20</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK121}</macro>
+                    <value>Sip_Trunk_Cluster1_21</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK122}</macro>
+                    <value>Sip_Trunk_Cluster1_22</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK123}</macro>
+                    <value>Sip_Trunk_Cluster1_23</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK124}</macro>
+                    <value>Sip_Trunk_Cluster1_24</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK125}</macro>
+                    <value>Sip_Trunk_Cluster1_25</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK126}</macro>
+                    <value>Sip_Trunk_Cluster1_26</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK127}</macro>
+                    <value>Sip_Trunk_Cluster1_27</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK128}</macro>
+                    <value>Sip_Trunk_Cluster1_28</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK129}</macro>
+                    <value>Sip_Trunk_Cluster1_29</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK130}</macro>
+                    <value>Sip_Trunk_Cluster1_30</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK201}</macro>
+                    <value>Sip_Trunk_Cluster2_01</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK202}</macro>
+                    <value>Sip_Trunk_Cluster2_02</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK203}</macro>
+                    <value>Sip_Trunk_Cluster2_03</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK204}</macro>
+                    <value>Sip_Trunk_Cluster2_04</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK205}</macro>
+                    <value>Sip_Trunk_Cluster2_05</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK206}</macro>
+                    <value>Sip_Trunk_Cluster2_06</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK207}</macro>
+                    <value>Sip_Trunk_Cluster2_07</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK208}</macro>
+                    <value>Sip_Trunk_Cluster2_08</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK209}</macro>
+                    <value>Sip_Trunk_Cluster2_09</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK210}</macro>
+                    <value>Sip_Trunk_Cluster2_10</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK211}</macro>
+                    <value>Sip_Trunk_Cluster2_11</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK212}</macro>
+                    <value>Sip_Trunk_Cluster2_12</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK213}</macro>
+                    <value>Sip_Trunk_Cluster2_13</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK214}</macro>
+                    <value>Sip_Trunk_Cluster2_14</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK215}</macro>
+                    <value>Sip_Trunk_Cluster2_15</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK216}</macro>
+                    <value>Sip_Trunk_Cluster2_16</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK217}</macro>
+                    <value>Sip_Trunk_Cluster2_17</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK218}</macro>
+                    <value>Sip_Trunk_Cluster2_18</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK219}</macro>
+                    <value>Sip_Trunk_Cluster2_19</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK220}</macro>
+                    <value>Sip_Trunk_Cluster2_20</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK221}</macro>
+                    <value>Sip_Trunk_Cluster2_21</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK222}</macro>
+                    <value>Sip_Trunk_Cluster2_22</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK223}</macro>
+                    <value>Sip_Trunk_Cluster2_23</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK224}</macro>
+                    <value>Sip_Trunk_Cluster2_24</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK225}</macro>
+                    <value>Sip_Trunk_Cluster2_25</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK226}</macro>
+                    <value>Sip_Trunk_Cluster2_26</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK227}</macro>
+                    <value>Sip_Trunk_Cluster2_27</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK228}</macro>
+                    <value>Sip_Trunk_Cluster2_28</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK229}</macro>
+                    <value>Sip_Trunk_Cluster2_29</value>
+                </macro>
+                <macro>
+                    <macro>{$SIPTRUNK230}</macro>
+                    <value>Sip_Trunk_Cluster2_30</value>
+                </macro>
+            </macros>
+            <templates/>
+            <screens/>
+        </template>
+    </templates>
+    <triggers>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,%UC_DRF,,,,,].str(&quot;%UC_DRF-3-DRF&quot;)}=1</expression>
+            <recovery_mode>2</recovery_mode>
+            <recovery_expression/>
+            <name>Falha de backup/restauração no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>4</priority>
+            <description>Falha de backup/restauração no Cluster de Call Manager {$CLUSTER1}.&#13;
+&#13;
+Após análise,favor encerrar manualmente o evento no Zabbix.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,%UC_DRF,,,,,].str(&quot;%UC_DRF-3-DRF&quot;)}=1</expression>
+            <recovery_mode>2</recovery_mode>
+            <recovery_expression/>
+            <name>Falha de backup/restauração no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>4</priority>
+            <description>Falha de backup/restauração no Cluster de Call Manager {$CLUSTER2}.&#13;
+&#13;
+Após análise,favor encerrar manualmente o evento no Zabbix.</description>
+            <type>1</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,,,,,,].str(&quot;%UC_CALLMANAGER-3-DbInfo&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,,,,,,].str(&quot;Replicate_State&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,,,,,,].str(&quot;value of 2&quot;)}=1</recovery_expression>
+            <name>Falha de database no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Falha de database no Cluster de Call Manager {$CLUSTER1}&#13;
+&#13;
+Após análise, favor encerrar manualmente o evento no Zabbix.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,,,,,,].str(%UC_CALLMANAGER-3-DbInfo)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,,,,,,].str(Replicate_State)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,,,,,,].str(value of 2)}=1</recovery_expression>
+            <name>Falha de database no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Falha de database no Cluster de Call Manager {$CLUSTER2}</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,&quot;UC_CDRREP-3-CDR&quot;,,,,,].str(%UC_CDRREP-3-CDR)}=1</expression>
+            <recovery_mode>2</recovery_mode>
+            <recovery_expression/>
+            <name>Falha de entrega de bilhete CDR no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url>https://{HOST.IP}/car/</url>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Falha de entrega de bilhete CDR no Cluster de Call Manager {$CLUSTER1}&#13;
+&#13;
+Verificar na URL demais informação.</description>
+            <type>1</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,&quot;UC_CDRREP-3-CDR&quot;,,,,,].str(%UC_CDRREP-3-CDR)}=1</expression>
+            <recovery_mode>2</recovery_mode>
+            <recovery_expression/>
+            <name>Falha de entrega de bilhete CDR no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>2</priority>
+            <description>Falha de entrega de bilhete CDR no Cluster de Call Manager {$CLUSTER2}&#13;
+&#13;
+Após análise,favor encerrar manualmente o evento no Zabbix.</description>
+            <type>1</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK101})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK101})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK101} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK101}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK102})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK102})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK102} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK102}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK103})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK103})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK103} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK103}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK104})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK104})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK104} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK104}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK105})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK105})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK105} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK105}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK106})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK106})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK106} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK106}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK107})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK107})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK107} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK107}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK108})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK108})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK108} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK108}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK109})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK109})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK109} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK109}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK110})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK110})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK110} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK110}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK111})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK111})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK111} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK111}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK112})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK112})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK112} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK112}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK113})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK113})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK113} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK113}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK114})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK114})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK114} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK114}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK115})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK115})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK115} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK115}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK116})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK116})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK116} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK116}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK117})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK117})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK117} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK117}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK118})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK118})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK118} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK118}.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK119})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK119})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK119} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK119}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK120})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK120})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK120} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK120}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK121})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK121})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK121} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK121}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK122})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK122})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK122} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK122}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK123})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK123})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK123} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK123}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK124})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK124})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK124} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK124}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK125})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK125})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK125} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK125}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK126})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK126})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK126} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK126}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK127})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK127})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK127} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK127}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK128})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK128})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK128} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK128}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK129})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK129})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK129} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK129}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK130})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER1}.log,SIPTrunk,,,,,].str({$SIPTRUNK130})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK130} no Cluster de Call Manager {$CLUSTER1}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER1} e o SIP Trunk {$SIPTRUNK130}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK201})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK201})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK201} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK201}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK202})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK202})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK202} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK202}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK203})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK203})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK203} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK203}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK204})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK204})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK204} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK204}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK205})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK205})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK205} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK205}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK206})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK206})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK206} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK206}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK207})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK207})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK207} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK207}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK208})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK208})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK208} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK208}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK209})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK209})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK209} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK209}.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK210})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK210})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK210} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK210}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK211})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK211})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK211} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK211}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK212})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK212})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK212} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK212}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK213})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK213})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK213} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK213}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK214})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK214})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK214} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK214}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK215})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK215})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK215} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK215}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK216})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK216})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK216} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK216}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK217})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK217})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK217} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK217}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK218})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK218})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK218} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK218}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK219})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK219})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK219} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK219}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK220})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK220})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK220} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK220}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK221})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK221})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK221} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK221}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK222})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK222})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK222} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK222}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK223})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK223})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK223} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK223}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK224})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK224})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK224} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK224}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK225})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK225})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK225} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK225}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK226})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK226})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK226} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK226}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK227})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK227})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK227} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK227}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK228})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK228})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK228} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK228}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK229})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK229})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK229} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK229}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-3-SIPTrunkOOS&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK230})}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str(&quot;UC_CALLMANAGER-5-SIPTrunkISV&quot;)}=1 and {Template Cisco Call Manager Syslog:log[/var/log/syslog-ng/{$CLUSTER2}.log,SIPTrunk,,,,,].str({$SIPTRUNK230})}=1</recovery_expression>
+            <name>Queda do SIP Trunk {$SIPTRUNK230} no Cluster de Call Manager {$CLUSTER2}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Verificar a conectividade entre o Cluster de Call Manager {$CLUSTER2} e o SIP Trunk {$SIPTRUNK230}.</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+    </triggers>
+</zabbix_export>

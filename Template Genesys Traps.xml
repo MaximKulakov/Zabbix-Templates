@@ -1,0 +1,2348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>3.2</version>
+    <date>2020-05-06T14:27:13Z</date>
+    <groups>
+        <group>
+            <name>Templates</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template Genesys Traps</template>
+            <name>Template Genesys Traps</name>
+            <description/>
+            <groups>
+                <group>
+                    <name>Templates</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>Trapper</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>Trap: Trap SNMP fallback</name>
+                    <type>17</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>snmptrap.fallback</key>
+                    <delay>0</delay>
+                    <history>7</history>
+                    <trends>0</trends>
+                    <status>0</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Trapper</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Trap SNMP - {HOST.HOST}</name>
+                    <type>17</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>snmptrap[&quot;{HOST.HOST}&quot;]</key>
+                    <delay>0</delay>
+                    <history>7</history>
+                    <trends>0</trends>
+                    <status>0</status>
+                    <value_type>4</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Item recebe todas as traps que contenham o hostname definido.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Trapper</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+            </items>
+            <discovery_rules/>
+            <httptests/>
+            <macros>
+                <macro>
+                    <macro>{$SERVICE1}</macro>
+                    <value>SERVICE1</value>
+                </macro>
+                <macro>
+                    <macro>{$SERVICE2}</macro>
+                    <value>SERVICE2</value>
+                </macro>
+                <macro>
+                    <macro>{$SERVICE3}</macro>
+                    <value>SERVICE3</value>
+                </macro>
+                <macro>
+                    <macro>{$SERVICE4}</macro>
+                    <value>SERVICE4</value>
+                </macro>
+                <macro>
+                    <macro>{$SERVICE5}</macro>
+                    <value>SERVICE5</value>
+                </macro>
+                <macro>
+                    <macro>{$SERVICE6}</macro>
+                    <value>SERVICE6</value>
+                </macro>
+                <macro>
+                    <macro>{$SERVICE7}</macro>
+                    <value>SERVICE7</value>
+                </macro>
+                <macro>
+                    <macro>{$SERVICE8}</macro>
+                    <value>SERVICE8</value>
+                </macro>
+                <macro>
+                    <macro>{$SERVICE9}</macro>
+                    <value>SERVICE9</value>
+                </macro>
+                <macro>
+                    <macro>{$SERVICE10}</macro>
+                    <value>SERVICE10</value>
+                </macro>
+                <macro>
+                    <macro>{$SERVICE11}</macro>
+                    <value>SERVICE11</value>
+                </macro>
+                <macro>
+                    <macro>{$SERVICE12}</macro>
+                    <value>SERVICE12</value>
+                </macro>
+                <macro>
+                    <macro>{$SERVICE13}</macro>
+                    <value>SERVICE13</value>
+                </macro>
+                <macro>
+                    <macro>{$SERVICE14}</macro>
+                    <value>SERVICE14</value>
+                </macro>
+                <macro>
+                    <macro>{$SERVICE15}</macro>
+                    <value>SERVICE15</value>
+                </macro>
+                <macro>
+                    <macro>{$SERVICE16}</macro>
+                    <value>SERVICE16</value>
+                </macro>
+                <macro>
+                    <macro>{$SERVICE17}</macro>
+                    <value>SERVICE17</value>
+                </macro>
+                <macro>
+                    <macro>{$SERVICE18}</macro>
+                    <value>SERVICE18</value>
+                </macro>
+                <macro>
+                    <macro>{$SERVICE19}</macro>
+                    <value>SERVICE19</value>
+                </macro>
+                <macro>
+                    <macro>{$SERVICE20}</macro>
+                    <value>SERVICE20</value>
+                </macro>
+                <macro>
+                    <macro>{$SERVICE21}</macro>
+                    <value>SERVICE21</value>
+                </macro>
+                <macro>
+                    <macro>{$SERVICE22}</macro>
+                    <value>SERVICE22</value>
+                </macro>
+                <macro>
+                    <macro>{$SERVICE23}</macro>
+                    <value>SERVICE23</value>
+                </macro>
+                <macro>
+                    <macro>{$SERVICE24}</macro>
+                    <value>SERVICE24</value>
+                </macro>
+                <macro>
+                    <macro>{$SERVICE25}</macro>
+                    <value>SERVICE25</value>
+                </macro>
+            </macros>
+            <templates/>
+            <screens/>
+        </template>
+    </templates>
+    <triggers>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE1}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5151&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE1} runmode changed to Backup - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Backup&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Backup mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE1}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5150&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE1} runmode changed to Primary- {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Primary&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Primarymode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE1}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5064&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE1}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5060&quot;)}=1 or &#13;
+{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE1}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5090&quot;)}=1</recovery_expression>
+            <name>Trap: Application {$SERVICE1} terminated due to internal condition  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Application {$SERVICE1} terminated due to internal condition</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE2}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5151&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE2} runmode changed to Backup - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Backup&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Backup mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE2}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5150&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE2} runmode changed to Primary - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Primary&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Primary mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE2}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5064&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE2}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5060&quot;)}=1 or &#13;
+{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE2}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5090&quot;)}=1</recovery_expression>
+            <name>Trap: Application {$SERVICE2} terminated due to internal condition  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Application {$SERVICE2} terminated due to internal condition</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE3}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5151&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE3} runmode changed to Backup - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Backup&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Backup mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE3}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5150&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE3} runmode changed to Primary - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Primary&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Primary mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE3}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5064&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE3}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5060&quot;)}=1 or &#13;
+{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE3}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5090&quot;)}=1</recovery_expression>
+            <name>Trap: Application {$SERVICE3} terminated due to internal condition  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Application {$SERVICE3} terminated due to internal condition</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE4}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5151&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE4} runmode changed to Backup - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Backup&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Backup mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE4}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5150&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE4} runmode changed to Primary - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Primary&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Primary mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE4}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5064&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE4}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5060&quot;)}=1 or &#13;
+{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE4}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5090&quot;)}=1</recovery_expression>
+            <name>Trap: Application {$SERVICE4} terminated due to internal condition  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Application {$SERVICE4} terminated due to internal condition</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE5}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5151&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE5} runmode changed to Backup - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Backup&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Backup mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE5}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5150&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE5} runmode changed to Primary - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Primary&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Primary mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE5}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5064&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE5}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5060&quot;)}=1 or &#13;
+{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE5}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5090&quot;)}=1</recovery_expression>
+            <name>Trap: Application {$SERVICE5} terminated due to internal condition  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Application {$SERVICE5} terminated due to internal condition</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE6}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5151&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE6} runmode changed to Backup - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Backup&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Backup mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE6}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5150&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE6} runmode changed to Primary - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Primary&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Primary mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE6}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5064&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE6}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5060&quot;)}=1 or &#13;
+{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE6}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5090&quot;)}=1</recovery_expression>
+            <name>Trap: Application {$SERVICE6} terminated due to internal condition  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Application {$SERVICE6} terminated due to internal condition</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE7}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5151&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE7} runmode changed to Backup - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Backup&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Backup mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE7}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5150&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE7} runmode changed to Primary - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Primary&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Primary mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE7}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5064&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE7}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5060&quot;)}=1 or &#13;
+{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE7}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5090&quot;)}=1</recovery_expression>
+            <name>Trap: Application {$SERVICE7} terminated due to internal condition  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Application {$SERVICE7} terminated due to internal condition</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE8}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5151&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE8} runmode changed to Backup - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Backup&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Backup mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE8}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5150&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE8} runmode changed to Primary - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Primary&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Primary mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE8}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5064&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE8}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5060&quot;)}=1 or &#13;
+{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE8}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5090&quot;)}=1</recovery_expression>
+            <name>Trap: Application {$SERVICE8} terminated due to internal condition  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Application {$SERVICE8} terminated due to internal condition</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE9}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5151&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE9} runmode changed to Backup - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Backup&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Backupmode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE9}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5150&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE9} runmode changed to Primary - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Primary&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Primary mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE9}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5064&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE9}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5060&quot;)}=1 or &#13;
+{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE9}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5090&quot;)}=1</recovery_expression>
+            <name>Trap: Application {$SERVICE9} terminated due to internal condition  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Application {$SERVICE9} terminated due to internal condition</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE10}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5151&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE10} runmode changed to Backup - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Backup&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Backup mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE10}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5150&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE10} runmode changed to Primary - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Primary&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Primary mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE10}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5064&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE10}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5060&quot;)}=1 or &#13;
+{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE10}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5090&quot;)}=1</recovery_expression>
+            <name>Trap: Application {$SERVICE10} terminated due to internal condition  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Application {$SERVICE10} terminated due to internal condition</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE11}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5151&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE11} runmode changed to Backup - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Backup&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Backup mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE11}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5150&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE11} runmode changed to Primary - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Primary&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Primary mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE10}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5064&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE11}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5060&quot;)}=1 or &#13;
+{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE11}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5090&quot;)}=1</recovery_expression>
+            <name>Trap: Application {$SERVICE11} terminated due to internal condition  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Application {$SERVICE11} terminated due to internal condition</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE12}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5151&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE12} runmode changed to Backup - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Backup&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Backup mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE12}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5150&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE12} runmode changed to Primary - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Primary &#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Primary mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE12}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5064&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE12}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5060&quot;)}=1 or &#13;
+{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE12}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5090&quot;)}=1</recovery_expression>
+            <name>Trap: Application {$SERVICE12} terminated due to internal condition  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Application {$SERVICE12} terminated due to internal condition</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE13}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5151&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE13} runmode changed to Backup - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Backup&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Backup mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE13}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5150&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE13} runmode changed to Primary  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Primary &#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Primary mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE13}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5064&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE13}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5060&quot;)}=1 or &#13;
+{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE13}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5090&quot;)}=1</recovery_expression>
+            <name>Trap: Application {$SERVICE13} terminated due to internal condition  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Application {$SERVICE13} terminated due to internal condition</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE14}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5151&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE14} runmode changed to Backup - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Backup&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Backup mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE14}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5150&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE14} runmode changed to Primary - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Primary &#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Primary mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE14}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5064&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE14}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5060&quot;)}=1 or &#13;
+{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE14}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5090&quot;)}=1</recovery_expression>
+            <name>Trap: Application {$SERVICE14} terminated due to internal condition  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Application {$SERVICE14} terminated due to internal condition</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE15}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5151&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE15} runmode changed to Backup - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Backup&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Backup mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE15}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5150&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE15} runmode changed to Primary - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Primary &#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Primary mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE15}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5064&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE15}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5060&quot;)}=1 or &#13;
+{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE15}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5090&quot;)}=1</recovery_expression>
+            <name>Trap: Application {$SERVICE15} terminated due to internal condition  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Application {$SERVICE15} terminated due to internal condition</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE16}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5151&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE16} runmode changed to Backup - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Backup&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Backup mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE16}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5150&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE16} runmode changed to Primary - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Primary &#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Primary mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE16}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5064&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE16}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5060&quot;)}=1 or &#13;
+{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE16}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5090&quot;)}=1</recovery_expression>
+            <name>Trap: Application {$SERVICE16} terminated due to internal condition  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Application {$SERVICE16} terminated due to internal condition</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE17}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5151&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE17} runmode changed to Backup - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Backup&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Backup mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE17}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5150&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE17} runmode changed to Primary - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Primary &#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Primary mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE17}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5064&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE17}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5060&quot;)}=1 or &#13;
+{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE17}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5090&quot;)}=1</recovery_expression>
+            <name>Trap: Application {$SERVICE17} terminated due to internal condition  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Application {$SERVICE17} terminated due to internal condition</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE18}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5151&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE18} runmode changed to Backup - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Backup&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Backup mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE18}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5150&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE18} runmode changed to Primary - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Primary &#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Primary mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE18}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5064&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE18}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5060&quot;)}=1 or &#13;
+{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE18}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5090&quot;)}=1</recovery_expression>
+            <name>Trap: Application {$SERVICE18} terminated due to internal condition  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Application {$SERVICE18} terminated due to internal condition</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE19}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5151&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE19} runmode changed to Backup - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Backup&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Backup mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE19}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5150&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE19} runmode changed to Primary  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Primary &#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Primary mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE19}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5064&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE19}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5060&quot;)}=1 or &#13;
+{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE19}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5090&quot;)}=1</recovery_expression>
+            <name>Trap: Application {$SERVICE19} terminated due to internal condition  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Application {$SERVICE19} terminated due to internal condition</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE20}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5151&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE20} runmode changed to Backup - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Backup&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Backup mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE20}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5150&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE20} runmode changed to Primary  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Primary &#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Primary mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE20}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5064&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE20}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5060&quot;)}=1 or &#13;
+{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE20}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5090&quot;)}=1</recovery_expression>
+            <name>Trap: Application {$SERVICE20} terminated due to internal condition  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Application {$SERVICE20} terminated due to internal condition</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE21}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5151&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE21} runmode changed to Backup - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Backup&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Backup mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE21}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5150&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE21} runmode changed to Primary  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Primary &#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Primary mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE21}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5064&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE21}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5060&quot;)}=1 or &#13;
+{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE21}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5090&quot;)}=1</recovery_expression>
+            <name>Trap: Application {$SERVICE21} terminated due to internal condition  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Application {$SERVICE21} terminated due to internal condition</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE22}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5151&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE22} runmode changed to Backup - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Backup&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Backup mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE22}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5150&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE22} runmode changed to Primary  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Primary &#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Primary mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE22}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5064&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE22}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5060&quot;)}=1 or &#13;
+{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE22}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5090&quot;)}=1</recovery_expression>
+            <name>Trap: Application {$SERVICE22} terminated due to internal condition  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Application {$SERVICE22} terminated due to internal condition</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE23}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5151&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE23} runmode changed to Backup - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Backup&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Backup mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE23}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5150&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE23} runmode changed to Primary  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Primary &#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Primary mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE23}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5064&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE23}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5060&quot;)}=1 or &#13;
+{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE23}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5090&quot;)}=1</recovery_expression>
+            <name>Trap: Application {$SERVICE23} terminated due to internal condition  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Application {$SERVICE23} terminated due to internal condition</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE24}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5151&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE24} runmode changed to Backup - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Backup&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Backup mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE24}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5150&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE24} runmode changed to Primary  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Primary &#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Primary mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE24}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5064&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE24}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5060&quot;)}=1 or &#13;
+{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE24}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5090&quot;)}=1</recovery_expression>
+            <name>Trap: Application {$SERVICE24} terminated due to internal condition  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Application {$SERVICE24} terminated due to internal condition</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE25}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5151&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE25} runmode changed to Backup - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Backup&#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Backup mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE25}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5150&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Application {$SERVICE25} runmode changed to Primary  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Switchover&#13;
+Application's runmode changed to Primary &#13;
+Solution Control Server (SCS) generates this log event on behalf of any application when the application starts to run in Primary mode.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE25}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5064&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE25}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5060&quot;)}=1 or &#13;
+{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE25}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5090&quot;)}=1</recovery_expression>
+            <name>Trap: Application {$SERVICE25} terminated due to internal condition  - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Application {$SERVICE25} terminated due to internal condition</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE1}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4504&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE1}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4503&quot;)}=1</recovery_expression>
+            <name>Trap: Falha de conexão no Serviço {$SERVICE1} - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>The connection between any two Genesys components has been lost.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE2}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4504&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE2}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4503&quot;)}=1</recovery_expression>
+            <name>Trap: Falha de conexão no Serviço {$SERVICE2} - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>The connection between any two Genesys components has been lost.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE3}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4504&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE3}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4503&quot;)}=1</recovery_expression>
+            <name>Trap: Falha de conexão no Serviço {$SERVICE3} - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>The connection between any two Genesys components has been lost.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE4}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4504&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE4}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4503&quot;)}=1</recovery_expression>
+            <name>Trap: Falha de conexão no Serviço {$SERVICE4} - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>The connection between any two Genesys components has been lost.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE5}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4504&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE5}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4503&quot;)}=1</recovery_expression>
+            <name>Trap: Falha de conexão no Serviço {$SERVICE5} - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>The connection between any two Genesys components has been lost.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE6}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4504&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE6}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4503&quot;)}=1</recovery_expression>
+            <name>Trap: Falha de conexão no Serviço {$SERVICE6} - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>The connection between any two Genesys components has been lost.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE7}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4504&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE7}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4503&quot;)}=1</recovery_expression>
+            <name>Trap: Falha de conexão no Serviço {$SERVICE7} - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>The connection between any two Genesys components has been lost.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE8}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4504&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE8}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4503&quot;)}=1</recovery_expression>
+            <name>Trap: Falha de conexão no Serviço {$SERVICE8} - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>The connection between any two Genesys components has been lost.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE9}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4504&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE9}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4503&quot;)}=1</recovery_expression>
+            <name>Trap: Falha de conexão no Serviço {$SERVICE9} - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>The connection between any two Genesys components has been lost.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE10}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4504&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE10}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4503&quot;)}=1</recovery_expression>
+            <name>Trap: Falha de conexão no Serviço {$SERVICE10} - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>The connection between any two Genesys components has been lost.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE11}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4504&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE11}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4503&quot;)}=1</recovery_expression>
+            <name>Trap: Falha de conexão no Serviço {$SERVICE11} - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>The connection between any two Genesys components has been lost.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE12}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4504&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE12}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4503&quot;)}=1</recovery_expression>
+            <name>Trap: Falha de conexão no Serviço {$SERVICE12} - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>The connection between any two Genesys components has been lost.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE13}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4504&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE13}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4503&quot;)}=1</recovery_expression>
+            <name>Trap: Falha de conexão no Serviço {$SERVICE13} - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>The connection between any two Genesys components has been lost.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE14}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4504&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE14}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4503&quot;)}=1</recovery_expression>
+            <name>Trap: Falha de conexão no Serviço {$SERVICE14} - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>The connection between any two Genesys components has been lost.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE15}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4504&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE15}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4503&quot;)}=1</recovery_expression>
+            <name>Trap: Falha de conexão no Serviço {$SERVICE15} - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>The connection between any two Genesys components has been lost.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE16}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4504&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE16}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4503&quot;)}=1</recovery_expression>
+            <name>Trap: Falha de conexão no Serviço {$SERVICE16} - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>The connection between any two Genesys components has been lost.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE17}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4504&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE17}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4503&quot;)}=1</recovery_expression>
+            <name>Trap: Falha de conexão no Serviço {$SERVICE17} - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>The connection between any two Genesys components has been lost.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE18}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4504&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE18}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4503&quot;)}=1</recovery_expression>
+            <name>Trap: Falha de conexão no Serviço {$SERVICE18} - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>The connection between any two Genesys components has been lost.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE19}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4504&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE19}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4503&quot;)}=1</recovery_expression>
+            <name>Trap: Falha de conexão no Serviço {$SERVICE19} - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>The connection between any two Genesys components has been lost.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE20}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4504&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE20}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4503&quot;)}=1</recovery_expression>
+            <name>Trap: Falha de conexão no Serviço {$SERVICE20} - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>The connection between any two Genesys components has been lost.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE21}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4504&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE21}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4503&quot;)}=1</recovery_expression>
+            <name>Trap: Falha de conexão no Serviço {$SERVICE21} - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>The connection between any two Genesys components has been lost.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE22}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4504&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE22}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4503&quot;)}=1</recovery_expression>
+            <name>Trap: Falha de conexão no Serviço {$SERVICE22} - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>The connection between any two Genesys components has been lost.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE23}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4504&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE23}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4503&quot;)}=1</recovery_expression>
+            <name>Trap: Falha de conexão no Serviço {$SERVICE23} - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>The connection between any two Genesys components has been lost.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE24}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4504&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE24}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4503&quot;)}=1</recovery_expression>
+            <name>Trap: Falha de conexão no Serviço {$SERVICE24} - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>The connection between any two Genesys components has been lost.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE25}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4504&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE25}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;4503&quot;)}=1</recovery_expression>
+            <name>Trap: Falha de conexão no Serviço {$SERVICE25} - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>The connection between any two Genesys components has been lost.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE1}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5094&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE1}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5093&quot;)}=1</recovery_expression>
+            <name>Trap: Service {$SERVICE1} unavailable - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Daemon Genesys component is unable to provide service for some internal reasons.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE2}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5094&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE2}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5093&quot;)}=1</recovery_expression>
+            <name>Trap: Service {$SERVICE2} unavailable - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Daemon Genesys component is unable to provide service for some internal reasons.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE3}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5094&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE3}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5093&quot;)}=1</recovery_expression>
+            <name>Trap: Service {$SERVICE3} unavailable - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Daemon Genesys component is unable to provide service for some internal reasons.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE4}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5094&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE4}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5093&quot;)}=1</recovery_expression>
+            <name>Trap: Service {$SERVICE4} unavailable - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Daemon Genesys component is unable to provide service for some internal reasons.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE5}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5094&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE5}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5093&quot;)}=1</recovery_expression>
+            <name>Trap: Service {$SERVICE5} unavailable - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Daemon Genesys component is unable to provide service for some internal reasons.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE6}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5094&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE6}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5093&quot;)}=1</recovery_expression>
+            <name>Trap: Service {$SERVICE6} unavailable - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Daemon Genesys component is unable to provide service for some internal reasons.s</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE7}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5094&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE7}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5093&quot;)}=1</recovery_expression>
+            <name>Trap: Service {$SERVICE7} unavailable - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Daemon Genesys component is unable to provide service for some internal reasons.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE8}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5094&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE8}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5093&quot;)}=1</recovery_expression>
+            <name>Trap: Service {$SERVICE8} unavailable - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Daemon Genesys component is unable to provide service for some internal reasons.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE9}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5094&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE9}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5093&quot;)}=1</recovery_expression>
+            <name>Trap: Service {$SERVICE9} unavailable - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Daemon Genesys component is unable to provide service for some internal reasons.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE10}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5094&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE10}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5093&quot;)}=1</recovery_expression>
+            <name>Trap: Service {$SERVICE10} unavailable - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Daemon Genesys component is unable to provide service for some internal reasons.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE11}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5094&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE11}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5093&quot;)}=1</recovery_expression>
+            <name>Trap: Service {$SERVICE11} unavailable - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Daemon Genesys component is unable to provide service for some internal reasons.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE12}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5094&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE12}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5093&quot;)}=1</recovery_expression>
+            <name>Trap: Service {$SERVICE12} unavailable - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Daemon Genesys component is unable to provide service for some internal reasons.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE13}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5094&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE13}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5093&quot;)}=1</recovery_expression>
+            <name>Trap: Service {$SERVICE13} unavailable - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Daemon Genesys component is unable to provide service for some internal reasons.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE14}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5094&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE14}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5093&quot;)}=1</recovery_expression>
+            <name>Trap: Service {$SERVICE14} unavailable - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Daemon Genesys component is unable to provide service for some internal reasons.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE15}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5094&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE15}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5093&quot;)}=1</recovery_expression>
+            <name>Trap: Service {$SERVICE15} unavailable - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Daemon Genesys component is unable to provide service for some internal reasons.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE16}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5094&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE16}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5093&quot;)}=1</recovery_expression>
+            <name>Trap: Service {$SERVICE16} unavailable - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Daemon Genesys component is unable to provide service for some internal reasons.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE17}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5094&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE17}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5093&quot;)}=1</recovery_expression>
+            <name>Trap: Service {$SERVICE17} unavailable - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Daemon Genesys component is unable to provide service for some internal reasons.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE18}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5094&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE18}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5093&quot;)}=1</recovery_expression>
+            <name>Trap: Service {$SERVICE18} unavailable - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Daemon Genesys component is unable to provide service for some internal reasons.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE19}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5094&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE19}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5093&quot;)}=1</recovery_expression>
+            <name>Trap: Service {$SERVICE19} unavailable - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Daemon Genesys component is unable to provide service for some internal reasons.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE20}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5094&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE20}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5093&quot;)}=1</recovery_expression>
+            <name>Trap: Service {$SERVICE20} unavailable - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Daemon Genesys component is unable to provide service for some internal reasons.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE21}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5094&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE21}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5093&quot;)}=1</recovery_expression>
+            <name>Trap: Service {$SERVICE21} unavailable - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Daemon Genesys component is unable to provide service for some internal reasons.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE22}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5094&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE22}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5093&quot;)}=1</recovery_expression>
+            <name>Trap: Service {$SERVICE22} unavailable - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Daemon Genesys component is unable to provide service for some internal reasons.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE23}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5094&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE23}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5093&quot;)}=1</recovery_expression>
+            <name>Trap: Service {$SERVICE23} unavailable - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Daemon Genesys component is unable to provide service for some internal reasons.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE24}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5094&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE24}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5093&quot;)}=1</recovery_expression>
+            <name>Trap: Service {$SERVICE24} unavailable - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Daemon Genesys component is unable to provide service for some internal reasons.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE25}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5094&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;{$SERVICE25}&quot;)}=1 and {Template Genesys Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;5093&quot;)}=1</recovery_expression>
+            <name>Trap: Service {$SERVICE25} unavailable - {HOST.HOST}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Daemon Genesys component is unable to provide service for some internal reasons.</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+    </triggers>
+</zabbix_export>

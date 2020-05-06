@@ -1,0 +1,2226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>3.2</version>
+    <date>2020-05-06T14:27:01Z</date>
+    <groups>
+        <group>
+            <name>Templates</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template Compunetix Traps</template>
+            <name>Template Compunetix Traps</name>
+            <description/>
+            <groups>
+                <group>
+                    <name>Templates</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>Trapper</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>Trap SNMP - {HOST.HOST}</name>
+                    <type>17</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>snmptrap[&quot;{HOST.HOST}&quot;]</key>
+                    <delay>0</delay>
+                    <history>7</history>
+                    <trends>0</trends>
+                    <status>0</status>
+                    <value_type>4</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Item recebe todas as traps que contenham o hostname definido.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Trapper</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+            </items>
+            <discovery_rules/>
+            <httptests/>
+            <macros/>
+            <templates/>
+            <screens/>
+        </template>
+    </templates>
+    <triggers>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 9487&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 9487&quot;)}=1</recovery_expression>
+            <name>Trap: ACL SERVER RESPONSE IS SLOW</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 9483&#13;
+&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 9483&#13;
+&quot;)}=1</recovery_expression>
+            <name>Trap: ACL SESSION DISCONNECTED</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 10488&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 10488&quot;)}=1</recovery_expression>
+            <name>Trap: AE REAR CARD IS MISSING</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3098&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3098&quot;)}=1</recovery_expression>
+            <name>Trap: APP DEAD</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1720&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1720&quot;)}=1</recovery_expression>
+            <name>Trap: APPLICATION IS NOT COMPATIBLE WITH AUDIO MODE SPECIFIED</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3096&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3096&quot;)}=1</recovery_expression>
+            <name>Trap: APP NOT RESPONDING</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3099&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3099&quot;)}=1</recovery_expression>
+            <name>Trap: APP STUCK</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1721&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1721&quot;)}=1</recovery_expression>
+            <name>Trap: ASSIGNED BUNDLE DOES NOT MATCH LOADED SOFTWARE BUNDLE</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 12288&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 12288&quot;)}=1</recovery_expression>
+            <name>Trap: Audio bus down</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1160&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1160&quot;)}=1</recovery_expression>
+            <name>Trap: Bad Cable to Next Rack</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1159&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1159&quot;)}=1</recovery_expression>
+            <name>Trap: Bad Cable to Previous Rack</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3144&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3144&quot;)}=1</recovery_expression>
+            <name>Trap: Bad MAC changed</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 9477&#13;
+&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 9477&#13;
+&quot;)}=1</recovery_expression>
+            <name>Trap: BILL SESSION DISCONNECTED</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1635&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1635&quot;)}=1</recovery_expression>
+            <name>Trap: Blue Alarm</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description>{ITEM.VALUE1}</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3156&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3156&quot;)}=1</recovery_expression>
+            <name>Trap: Board Software Mismatch</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 23043&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 23043&quot;)}=1</recovery_expression>
+            <name>Trap: Bridge Controller has lost communication with the Rack Controller</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3077&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3077&quot;)}=1</recovery_expression>
+            <name>Trap: Clock A is bad</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3079&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3079&quot;)}=1</recovery_expression>
+            <name>Trap: Clock B is bad</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3081&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3081&quot;)}=1</recovery_expression>
+            <name>Trap: Clock C is bad</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3141&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3141&quot;)}=1</recovery_expression>
+            <name>Trap: Cluster size too small</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 6676&#13;
+&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 6676&#13;
+&quot;)}=1</recovery_expression>
+            <name>Trap: CP has lost communication with the IOC</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3163&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3163&quot;)}=1</recovery_expression>
+            <name>Trap: CPIO failover to secondary</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 6674&#13;
+&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 6674&#13;
+&quot;)}=1</recovery_expression>
+            <name>Trap: CPIO has lost communication with the audio board</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3165&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3165&quot;)}=1</recovery_expression>
+            <name>Trap: CPIO secondary failed</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3102&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3102&quot;)}=1</recovery_expression>
+            <name>Trap: CP router backup - system memory low</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1657&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1657&quot;)}=1</recovery_expression>
+            <name>Trap: CSSM-R not reconnecting to Primary IOC</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1770&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1770&quot;)}=1</recovery_expression>
+            <name>Trap: CSSM Failover</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1651&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1651&quot;)}=1</recovery_expression>
+            <name>Trap: CSSM FRONT APPLICATION DOES NOT MATCH WITH CSSM REAR APPLICATION</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1653&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1653&quot;)}=1</recovery_expression>
+            <name>Trap: CSSM Network Ethernet Interface is Down</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1772&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1772&quot;)}=1</recovery_expression>
+            <name>Trap: CSSM Network Interface Packet Loss</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1655&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1655&quot;)}=1</recovery_expression>
+            <name>Trap: CSSM REAR APPLICATION INITIALIZATION FAILED</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 27783&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 27783&quot;)}=1</recovery_expression>
+            <name>Trap: DATABASE FAILED</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 9216&#13;
+&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 9216&#13;
+&quot;)}=1</recovery_expression>
+            <name>Trap: DIALOUT NUMBER VALIDATION FAILED</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 16851&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 16851&quot;)}=1</recovery_expression>
+            <name>Trap: DTMF detection failure</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3142&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3142&quot;)}=1</recovery_expression>
+            <name>Trap: ECC multibit error</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3143&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3143&quot;)}=1</recovery_expression>
+            <name>Trap: ECC single bit error</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1643&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1643&quot;)}=1</recovery_expression>
+            <name>Trap: Eth0 Down</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1645&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1645&quot;)}=1</recovery_expression>
+            <name>Trap: Eth1 Down</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 12290&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 12290&quot;)}=1</recovery_expression>
+            <name>Trap: Ethernet Down</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 10480&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 10480&quot;)}=1</recovery_expression>
+            <name>Trap: External hold music is missing</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1727&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1727&quot;)}=1</recovery_expression>
+            <name>Trap: FAILED TO RESOLVE SIP DOMAIN SERVER USING DNS LOOKUP</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1764&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1764&quot;)}=1</recovery_expression>
+            <name>Trap: FAILED TO RESOLVE SIP DOMAIN SERVER USING DNS LOOKUP</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1729&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1729&quot;)}=1</recovery_expression>
+            <name>Trap: FAILED TO RESOLVE SIP OUTBOUND PROXY HOSTNAME USING DNS LOOKUP</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1766&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1766&quot;)}=1</recovery_expression>
+            <name>Trap: FAILED TO RESOLVE SIP OUTBOUND PROXY USING DNS LOOKUP</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1731&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1731&quot;)}=1</recovery_expression>
+            <name>Trap: FAILED TO RESOLVE SIP PSTN GATEWAY HOSTNAME USING DNS LOOKUP</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1768&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1768&quot;)}=1</recovery_expression>
+            <name>Trap: FAILED TO RESOLVE SIP PSTN GATEWAY USING DNS LOOKUP</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 11266&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 11266&quot;)}=1</recovery_expression>
+            <name>Trap: Fan controller fault</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 30108&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 30108&quot;)}=1</recovery_expression>
+            <name>Trap: FREE CC PARTIES BELOW THRESHOLD</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 5640&#13;
+&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 5640&#13;
+&quot;)}=1</recovery_expression>
+            <name>Trap: Free Space limit exceeded</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1719&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1719&quot;)}=1</recovery_expression>
+            <name>Trap: HARDWARE MAY NOT BE COMPATIBLE WITH VOIP HD FIRMWARE</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 10482&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 10482&quot;)}=1</recovery_expression>
+            <name>Trap: Hold Music Failover</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 10464&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 10464&quot;)}=1</recovery_expression>
+            <name>Trap: IDR DSP DOWN</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1699&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1699&quot;)}=1</recovery_expression>
+            <name>Trap: Invalid Codec License</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3104&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3104&quot;)}=1</recovery_expression>
+            <name>Trap: IOC router backup - system memory low</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1689&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1689&quot;)}=1</recovery_expression>
+            <name>Trap: ISDN Stack Error</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1638&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Layer 2 Down</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1673&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1673&quot;)}=1</recovery_expression>
+            <name>Trap: LIF DSP DOWN</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1812&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1812&quot;)}=1</recovery_expression>
+            <name>Trap: LIF VOIP REAR COMM DOWN</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1157&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1157&quot;)}=1</recovery_expression>
+            <name>Trap: Link to Next Rack Down</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1156&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1156&quot;)}=1</recovery_expression>
+            <name>Trap: Link to Previous Rack Down</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 5633&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 5633&quot;)}=1</recovery_expression>
+            <name>Trap: LOGGING FAILED</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3091&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3091&quot;)}=1</recovery_expression>
+            <name>Trap: Lost communication with the CPIO</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3095&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3095&quot;)}=1</recovery_expression>
+            <name>Trap: Missing File Alarm</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 10441&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 10441&quot;)}=1</recovery_expression>
+            <name>Trap: Missing File Alarm</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description>{ITEM.VALUE1}</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 29061&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 29061&quot;)}=1</recovery_expression>
+            <name>Trap: NO FREE PORTS</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 5638&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 5638&quot;)}=1</recovery_expression>
+            <name>Trap: No Logging client</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 30107&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 30107&quot;)}=1</recovery_expression>
+            <name>Trap: NO MORE FREE CC PARTIES</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 30115&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 30115&quot;)}=1</recovery_expression>
+            <name>Trap: NO MORE FREE VOICE CAPTURE AUDIO OBJECTS</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 11523&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 11523&quot;)}=1</recovery_expression>
+            <name>Trap: No NTP server available</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 11521&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 11521&quot;)}=1</recovery_expression>
+            <name>Trap: No response from NTP</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 10466&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 10466&quot;)}=1</recovery_expression>
+            <name>Trap: ODR DSP DOWN</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 5642&#13;
+&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 5642&#13;
+&quot;)}=1</recovery_expression>
+            <name>Trap: Out of Heap Space</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3072&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3072&quot;)}=1</recovery_expression>
+            <name>Trap: Over major temperature limit</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3107&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3107&quot;)}=1</recovery_expression>
+            <name>Trap: Over minor temperature limit</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 9485&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 9485&quot;)}=1</recovery_expression>
+            <name>Trap: PCODE SERVER RESPONSE IS SLOW</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 9481&#13;
+&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 9481&#13;
+&quot;)}=1</recovery_expression>
+            <name>Trap: PCODE SESSION</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 9475&#13;
+&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 9475&#13;
+&quot;)}=1</recovery_expression>
+            <name>Trap: PCODE SESSION INACTIVE</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3083&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3083&quot;)}=1</recovery_expression>
+            <name>Trap: PLL output is bad</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1724&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1724&quot;)}=1</recovery_expression>
+            <name>Trap: Poor call quality</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 11264&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 11264&quot;)}=1</recovery_expression>
+            <name>Trap: Power supply fault</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 11268&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 11268&quot;)}=1</recovery_expression>
+            <name>Trap: Power supply removed</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3087&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3087&quot;)}=1</recovery_expression>
+            <name>Trap: Primary clock is bad</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 18049&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 18049&quot;)}=1</recovery_expression>
+            <name>Trap: Rack Software Mismatch</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 16853&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 16853&quot;)}=1</recovery_expression>
+            <name>Trap: Reached the maximum number of usable ports</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 29063&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 29063&quot;)}=1</recovery_expression>
+            <name>Trap: Reaching Maximum Port Capacity</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1154&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1154&quot;)}=1</recovery_expression>
+            <name>Trap: Rear Card Hardware Fault</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1153&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1153&quot;)}=1</recovery_expression>
+            <name>Trap: Rear Card not Present</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3075&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3075&quot;)}=1</recovery_expression>
+            <name>Trap: Rear card removed</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3110&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3110&quot;)}=1</recovery_expression>
+            <name>Trap: Rear Missing File Alarm</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 10389&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 10389&quot;)}=1</recovery_expression>
+            <name>Trap: Recording Redundancy Failure</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 10375&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 10375&quot;)}=1</recovery_expression>
+            <name>Trap: Recording Space Critical</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 10374&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 10374&quot;)}=1</recovery_expression>
+            <name>Trap: Recording Space Low</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1634&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Red Alarm</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3085&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3085&quot;)}=1</recovery_expression>
+            <name>Trap: Reference clock is bad</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1695&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1695&quot;)}=1</recovery_expression>
+            <name>Trap: REGISTRATION WITH SIP DOMAIN FAILED</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1744&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1744&quot;)}=1</recovery_expression>
+            <name>Trap: REGISTRATION WITH SIP DOMAIN FAILED</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1701&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1701&quot;)}=1</recovery_expression>
+            <name>Trap: REGISTRATION WITH SIP SERVER #1 FAILED</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1746&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1746&quot;)}=1</recovery_expression>
+            <name>Trap: REGISTRATION WITH SIP SERVER #1 FAILED</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1703&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1703&quot;)}=1</recovery_expression>
+            <name>Trap: REGISTRATION WITH SIP SERVER #2 FAILED</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1748&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1748&quot;)}=1</recovery_expression>
+            <name>Trap: REGISTRATION WITH SIP SERVER #2 FAILED</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1705&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1705&quot;)}=1</recovery_expression>
+            <name>Trap: REGISTRATION WITH SIP SERVER #3 FAILED</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1750&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1750&quot;)}=1</recovery_expression>
+            <name>Trap: REGISTRATION WITH SIP SERVER #3 FAILED</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1707&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1707&quot;)}=1</recovery_expression>
+            <name>Trap: REGISTRATION WITH SIP SERVER #4 FAILED</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1752&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1752&quot;)}=1</recovery_expression>
+            <name>Trap: REGISTRATION WITH SIP SERVER #4 FAILED</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 9479&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 9479&quot;)}=1</recovery_expression>
+            <name>Trap: REPORT SESSION DISCONNECTED</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1647&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1647&quot;)}=1</recovery_expression>
+            <name>Trap: Reset Required</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 30123&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 30123&quot;)}=1</recovery_expression>
+            <name>Trap: REUSING VOICE CAPTURE AUDIO OBJECTS WITHOUT</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 9472&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 9472&quot;)}=1</recovery_expression>
+            <name>Trap: RTBI CLIENT DROPPED</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3089&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3089&quot;)}=1</recovery_expression>
+            <name>Trap: Secondary clock is bad</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 4096&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 4096&quot;)}=1</recovery_expression>
+            <name>Trap: Self Test Failed</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1641&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1641&quot;)}=1</recovery_expression>
+            <name>Trap: Signaling Bits Unstable</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1717&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1717&quot;)}=1</recovery_expression>
+            <name>Trap: SIP DOMAIN SERVER IS NOT RESPONDING</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1762&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1762&quot;)}=1</recovery_expression>
+            <name>Trap: SIP DOMAIN SERVER IS NOT RESPONDING</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1709&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1709&quot;)}=1</recovery_expression>
+            <name>Trap: SIP REGISTRAR #1 IS NOT RESPONDING</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1711&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1711&quot;)}=1</recovery_expression>
+            <name>Trap: SIP REGISTRAR #2 IS NOT RESPONDING</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1713&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1713&quot;)}=1</recovery_expression>
+            <name>Trap: SIP REGISTRAR #3 IS NOT RESPONDING</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1715&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1715&quot;)}=1</recovery_expression>
+            <name>Trap: SIP REGISTRAR #4 IS NOT RESPONDING</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1754&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1754&quot;)}=1</recovery_expression>
+            <name>Trap: SIP SERVER #1 IS NOT RESPONDING</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1756&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1756&quot;)}=1</recovery_expression>
+            <name>Trap: SIP SERVER #2 IS NOT RESPONDING</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1758&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1758&quot;)}=1</recovery_expression>
+            <name>Trap: SIP SERVER #3 IS NOT RESPONDING</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1760&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1760&quot;)}=1</recovery_expression>
+            <name>Trap: SIP SERVER #4 IS NOT RESPONDING</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1775&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1775&quot;)}=1</recovery_expression>
+            <name>Trap: Span Configuration Failed</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 16518&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 16518&quot;)}=1</recovery_expression>
+            <name>Trap: Summation Set Creation Failure</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1777&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1777&quot;)}=1</recovery_expression>
+            <name>Trap: TLS CERTIFICATE NOT FOUND</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 10387&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 10387&quot;)}=1</recovery_expression>
+            <name>Trap: Voice Capture Hard Disk Access Resources Critical</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 10386&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 10386&#13;
+&quot;)}=1</recovery_expression>
+            <name>Trap: Voice Capture Hard Disk Access Resources Low</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1217&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1217&quot;)}=1</recovery_expression>
+            <name>Trap: Voice Summation Conferencing Data Incorrect</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 16840&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 16840&quot;)}=1</recovery_expression>
+            <name>Trap: VoIP DSP DOWN</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1649&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1649&quot;)}=1</recovery_expression>
+            <name>Trap: VoIP Network Ethernet Interface is Down</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1697&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1697&quot;)}=1</recovery_expression>
+            <name>Trap: VOIP REAR APPLICATION INITIALIZATION FAILED</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3140&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 3140&quot;)}=1</recovery_expression>
+            <name>Trap: Volume Manager dead</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1161&quot;)}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Cleared&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1161&quot;)}=1</recovery_expression>
+            <name>Trap: VSR Lost Communication with VSF--Bypass Mode</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;Active&quot;)}=1 and {Template Compunetix Traps:snmptrap[&quot;{HOST.HOST}&quot;].str(&quot;INTEGER: 1633&quot;)}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Trap: Yellow Alarm</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description>{ITEM.VALUE1}</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+    </triggers>
+</zabbix_export>
