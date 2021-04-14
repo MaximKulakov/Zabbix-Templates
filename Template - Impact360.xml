@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>3.2</version>
+    <date>2021-04-14T17:10:21Z</date>
+    <groups>
+        <group>
+            <name>Templates</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template Impact360</template>
+            <name>Template Impact360</name>
+            <description/>
+            <groups>
+                <group>
+                    <name>Templates</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>Impact360</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>Log - ibuild_mgr_0.log</name>
+                    <type>7</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>logrt[&quot;E:\Impact360\Software\Enhanced_Speech\IndexBuilder\Bin\ibuild_mgr_0.log&quot;,&quot;ibuild.lck is already locked by other process&quot;,,,,]</key>
+                    <delay>30</delay>
+                    <history>90</history>
+                    <trends>0</trends>
+                    <status>1</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Impact360</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Log - ibuild_mgr_0.log LOG</name>
+                    <type>7</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>log[&quot;E:\Impact360\Software\Enhanced_Speech\IndexBuilder\Bin\ibuild_mgr_0.log&quot;,&quot;ibuild.lck is already locked by other process&quot;,,,,]</key>
+                    <delay>30</delay>
+                    <history>90</history>
+                    <trends>0</trends>
+                    <status>0</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Impact360</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+            </items>
+            <discovery_rules/>
+            <httptests/>
+            <macros/>
+            <templates/>
+            <screens/>
+        </template>
+    </templates>
+    <triggers>
+        <trigger>
+            <expression>{Template Impact360:logrt[&quot;E:\Impact360\Software\Enhanced_Speech\IndexBuilder\Bin\ibuild_mgr_0.log&quot;,&quot;ibuild.lck is already locked by other process&quot;,,,,].count(60m,ibuild.lck is already locked by other process)}&gt;50 and {Template Impact360:logrt[&quot;E:\Impact360\Software\Enhanced_Speech\IndexBuilder\Bin\ibuild_mgr_0.log&quot;,&quot;ibuild.lck is already locked by other process&quot;,,,,].nodata(60m)}=0</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Impact360:logrt[&quot;E:\Impact360\Software\Enhanced_Speech\IndexBuilder\Bin\ibuild_mgr_0.log&quot;,&quot;ibuild.lck is already locked by other process&quot;,,,,].count(60m,ibuild.lck is already locked by other process)}&lt;50</recovery_expression>
+            <name>Log - ibuild.lck is already locked by other process</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>{ITEM.VALUE1}</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Impact360:log[&quot;E:\Impact360\Software\Enhanced_Speech\IndexBuilder\Bin\ibuild_mgr_0.log&quot;,&quot;ibuild.lck is already locked by other process&quot;,,,,].count(60m,ibuild.lck is already locked by other process)}&gt;50 and {Template Impact360:log[&quot;E:\Impact360\Software\Enhanced_Speech\IndexBuilder\Bin\ibuild_mgr_0.log&quot;,&quot;ibuild.lck is already locked by other process&quot;,,,,].nodata(60m)}=0</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{Template Impact360:log[&quot;E:\Impact360\Software\Enhanced_Speech\IndexBuilder\Bin\ibuild_mgr_0.log&quot;,&quot;ibuild.lck is already locked by other process&quot;,,,,].count(60m,ibuild.lck is already locked by other process)}&lt;50</recovery_expression>
+            <name>Log - ibuild.lck is already locked by other process</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>{ITEM.VALUE1}</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+    </triggers>
+</zabbix_export>
